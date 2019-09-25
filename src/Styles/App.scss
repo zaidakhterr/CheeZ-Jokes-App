@@ -1,3 +1,16 @@
+@import 'variables';
+
 .App {
-  text-align: center;
+  height: 100vh;
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    $bg-color-11 0%,
+    $bg-color-12 50%,
+    $bg-color-21 50%,
+    $bg-color-22 100%
+  );
 }

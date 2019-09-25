@@ -1,0 +1,21 @@
+$bg-color-11: #0f75db;
+$bg-color-12: #4b9beb;
+$bg-color-21: #e26dec;
+$bg-color-22: #de34ee;
+$purple: #7812d6;
+$purple-2: #950cf0;
+$green: #10ad10;
+$red: #ee3e09;
+
+@function text-color($bg-color) {
+  @if (lightness($bg-color) > 50) {
+    @return rgb(33, 26, 68);
+  } @else {
+    @return rgb(241, 241, 241);
+  }
+}
+
+@mixin set-color($bg-color) {
+  background-color: $bg-color;
+  color: text-color($bg-color);
+}
